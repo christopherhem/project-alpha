@@ -4,4 +4,6 @@ from projects.views import (
     ProjectListView,
 )
 
-urlpatterns = [path("", ProjectListView.as_view(), name="list_projects")]
+urlpatterns = [
+    path("", ProjectListView.as_view(), name="home"),
+]
